@@ -17,4 +17,11 @@ Due to the inbalance in the dataset, first employ the "Naive Random Oversampling
 
   <img width="536" alt="naive_oversampling" src="https://user-images.githubusercontent.com/112113327/213516236-adb45624-204e-4644-b2ee-538a93ec649e.png">
 
+Next the resampled data was trained in logistic regression model and tested for the test data set. The accuracy of this method is 64.56% which implies approximatetly 65 predictions out of 100 is accurate. The result are shown below:
 
+  
+  <img width="441" alt="naive_accuracy" src="https://user-images.githubusercontent.com/112113327/213521467-e2287cdd-4c77-44b3-b32b-6b399a4e6641.png">
+
+As the last step, the classification report was obtained and shown below:
+
+  <img width="721" alt="naive_classification" src="https://user-images.githubusercontent.com/112113327/213521808-9bde6bb8-d3af-406f-bc47-fd61a9fdddb6.png">
