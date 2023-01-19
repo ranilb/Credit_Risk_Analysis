@@ -22,6 +22,30 @@ Next the resampled data was trained in logistic regression model and tested for 
   
   <img width="441" alt="naive_accuracy" src="https://user-images.githubusercontent.com/112113327/213521467-e2287cdd-4c77-44b3-b32b-6b399a4e6641.png">
 
+It can be observed that 53 high risk and 11,675 low risk values are predicted accurately. The table is shown below:
+
+<img width="354" alt="Naive_condussion" src="https://user-images.githubusercontent.com/112113327/213526631-bda4e133-5adc-4f48-a3c1-a500beedcca8.png">
+
 As the last step, the classification report was obtained and shown below:
 
   <img width="721" alt="naive_classification" src="https://user-images.githubusercontent.com/112113327/213521808-9bde6bb8-d3af-406f-bc47-fd61a9fdddb6.png">
+  
+  
+### SMOTE Oversampling  
+To avoid the inbalance situation in the dataset, next we employ the "SMOTE Oversampling" technique. After oversamling the training data set, both low risk and high risk credit records are equal to 51,352. The code and the results are shown below:
+
+  <img width="759" alt="SMOTE_oversampling" src="https://user-images.githubusercontent.com/112113327/213523284-63d2f038-38cc-4c58-a06d-31d0e38be39f.png">
+
+Next the resampled data was trained in logistic regression model and tested on the test dataset. The accuracy of this method is 62.24% which implies approximatetly 62 predictions out of 100 is accurate. The result are shown below:
+
+  
+ <img width="356" alt="SMOKE_accuracy" src="https://user-images.githubusercontent.com/112113327/213526032-7fbf87a2-8a84-4dff-a921-83b7c75b6705.png">
+
+It can be observed that 53 high risk and 10,916 low risk values are predicted accurately. The table is shown below:
+
+  <img width="357" alt="SMOKE_confusion" src="https://user-images.githubusercontent.com/112113327/213526504-f77da29a-8a3f-41fb-bfbd-72658046f85e.png">
+
+As the last step, the classification report was obtained and shown below:
+
+ <img width="711" alt="SMOKE_classification" src="https://user-images.githubusercontent.com/112113327/213526553-8b2efb28-c391-4eb3-b955-999639bc3175.png">
+
