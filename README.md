@@ -87,7 +87,7 @@ As the last step, the classification report was obtained and shown below:
 <img width="708" alt="combine_classification" src="https://user-images.githubusercontent.com/112113327/213536964-9353cad8-4827-4f55-a492-70d452393193.png">
 
 ### Balanced Random Forest Classifier
-In this section, we use a new techneque, called Balanced Random Forest Classifier, to check the accuracy of the method  In this method, number of high-risk data is 260 rows compared to 51,352 of low-risk data. There is no special sampling techneque is used here. However, the data was trained using the  the "BalancedRandomForestClassifier" model rather than the "logistic model".  The accuracy of this method is 78.78% which implies approximatetly 79 predictions out of 100 is accurate. The result are shown below:
+In this section, we use a new techneque, called Balanced Random Forest Classifier, to check the accuracy of the predictions.  In this method, number of high-risk data is 260 rows compared to 51,352 of low-risk data. There is no special sampling techneque is used here. However, the data was trained using the  the "BalancedRandomForestClassifier" model rather than the "logistic model".  The accuracy of this method is 78.78% which implies approximatetly 79 predictions out of 100 is accurate. The result are shown below:
 
 <img width="446" alt="brfc_accuracy" src="https://user-images.githubusercontent.com/112113327/213545463-aa74b50f-6436-4c4a-9b49-5683bdb3e2b3.png">
 
@@ -99,4 +99,22 @@ As the last step, the classification report was obtained and shown below:
 
 
 <img width="712" alt="brfc_classification" src="https://user-images.githubusercontent.com/112113327/213545527-35dd208c-4590-4f44-b1dd-b74d0d9197a3.png">
+
+
+### Easy Ensemble AdaBoost Classifie
+In this last section, we use another techneque, called Easy Ensemble AdaBoost Classifie, to check the accuracy of the predictions.  In this method, number of high-risk data is 260 rows compared to 51,352 of low-risk data. There is no special sampling techneque is used here. However, 
+the data was trained using the "EasyEnsembleClassifier" model.  The accuracy of this method is 92.54% which implies approximatetly 93 predictions out of 100 is accurate and which is great. The result are shown below:
+
+<img width="361" alt="easy_accuracy" src="https://user-images.githubusercontent.com/112113327/213549201-6ed56fa2-63a7-4db4-899d-d0da144000b2.png">
+
+It can be observed that 79 high risk and 16,139 low risk values are predicted accurately. The table is shown below:
+
+
+<img width="355" alt="easy_confusion" src="https://user-images.githubusercontent.com/112113327/213549327-05271ff1-2076-428a-84c1-4946872fbb15.png">
+
+
+As the last step, the classification report was obtained and shown below:
+
+
+<img width="716" alt="easy_classification" src="https://user-images.githubusercontent.com/112113327/213549383-fdb7f689-111a-41df-a39e-72fd35b7bfef.png">
 
