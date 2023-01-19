@@ -8,16 +8,16 @@ First, we oversample the data using the "RandomOverSampler" and "SMOTE" algorith
 #### Data: [Credit card credit dataset](https://github.com/ranilb/Credit_Risk_Analysis/blob/main/LoanStats_2019Q1.csv.zip) from LendingClub
 
 ## Results
-After cleaning up the dataset, there are 68,470 records for low risk loans and there are only 347 records for high risk loans. Hence it veryfies that this is an unbalanced classification problem. There information is shown below:
+After cleaning up the dataset, there are 68,470 records for low risk loans and there are only 347 records for high risk loans. Hence it verifies that this is an unbalanced classification problem. There information is shown below:
 
   <img width="361" alt="balance_target" src="https://user-images.githubusercontent.com/112113327/213509567-d0c94e7e-9e99-4168-83b9-265efd79ad21.png">
   
 ### Naive Random Oversampling
-Due to the inbalance in the dataset, first employ the "Naive Random Oversampling" technique to balance the low risk and high risk credit records. After oversamling the training data set, both low risk and high risk credit records are equal to 51,352. The code and the results are shown below:
+Due to the in balance in the dataset, first employ the "Naive Random Oversampling" technique to balance the low risk and high risk credit records. After oversamling the training data set, both low risk and high risk credit records are equal to 51,352. The code and the results are shown below:
 
   <img width="536" alt="naive_oversampling" src="https://user-images.githubusercontent.com/112113327/213516236-adb45624-204e-4644-b2ee-538a93ec649e.png">
 
-Next the resampled data was trained in logistic regression model and tested for the test data set. The accuracy of this method is 64.56% which implies approximatetly 65 predictions out of 100 is accurate. The result are shown below:
+Next the resampled data was trained in logistic regression model and tested for the test data set. The accuracy of this method is 64.56% which implies approximately 65 predictions out of 100 is accurate. The result are shown below:
 
   
   <img width="441" alt="naive_accuracy" src="https://user-images.githubusercontent.com/112113327/213521467-e2287cdd-4c77-44b3-b32b-6b399a4e6641.png">
