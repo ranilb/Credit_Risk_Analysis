@@ -67,3 +67,21 @@ As the last step, the classification report was obtained and shown below:
 
 <img width="713" alt="Cluster_classification" src="https://user-images.githubusercontent.com/112113327/213531911-2ef65f48-00b9-43cf-b27f-6ee3b99efaf6.png">
 
+
+### Combination Sampling
+In the three prevous sections, we discussed about both oversampling and under sampling techneques. Now in this section, we are going to combine both techniques and make a new combination to resample the data. Therefore, in this method, number of shigh-risk data rows is 68,458 and the number of low-risk data rows is 62,022 which are not equal. The code is shown below: 
+
+<img width="692" alt="Combine_count" src="https://user-images.githubusercontent.com/112113327/213536583-35985caa-00c6-4879-b91c-697c950fb345.png">
+
+Next the resampled data was trained in logistic regression model and tested on the test dataset. The accuracy of this method is 65.31% which implies approximatetly 65 predictions out of 100 is accurate. The result are shown below:
+
+<img width="353" alt="combine_accuracy" src="https://user-images.githubusercontent.com/112113327/213536730-d746eefc-f3ac-4319-a250-7a64512408ce.png">
+
+
+It can be observed that 60 high risk and 10,555 low risk values are predicted accurately. The table is shown below:
+
+<img width="351" alt="combine_confusion" src="https://user-images.githubusercontent.com/112113327/213536925-9aa67a17-f818-41d5-a495-c3df29adb813.png">
+
+As the last step, the classification report was obtained and shown below:
+
+<img width="708" alt="combine_classification" src="https://user-images.githubusercontent.com/112113327/213536964-9353cad8-4827-4f55-a492-70d452393193.png">
