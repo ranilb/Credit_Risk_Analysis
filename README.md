@@ -49,3 +49,21 @@ As the last step, the classification report was obtained and shown below:
 
  <img width="711" alt="SMOKE_classification" src="https://user-images.githubusercontent.com/112113327/213526553-8b2efb28-c391-4eb3-b955-999639bc3175.png">
 
+
+### Cluster Centroid Undersampling
+This techneque is different methos compared to the previous two oversampling methods. In this methos, number of sample data is 260 rows compared to 51,352 in last two methods. Therefore, it is called an undersampling mehod and code is shown below: 
+
+<img width="693" alt="Cluster_count" src="https://user-images.githubusercontent.com/112113327/213530732-9c8400dd-12bc-4a19-a43e-d2e4a022ee2d.png">
+
+Next the resampled data was trained in logistic regression model and tested on the test dataset. The accuracy of this method is 51.28% which implies approximatetly 51 predictions out of 100 is accurate. The result are shown below:
+
+<img width="363" alt="Cluster_accuracy" src="https://user-images.githubusercontent.com/112113327/213530935-0e702269-08d0-4fc9-80b2-6b79e95a9a2b.png">
+
+It can be observed that 50 high risk and 7,717 low risk values are predicted accurately. The table is shown below:
+
+<img width="351" alt="Cluster_confusion" src="https://user-images.githubusercontent.com/112113327/213531848-e1bcd434-89f8-4b16-9c27-2e20f19acf8c.png">
+
+As the last step, the classification report was obtained and shown below:
+
+<img width="713" alt="Cluster_classification" src="https://user-images.githubusercontent.com/112113327/213531911-2ef65f48-00b9-43cf-b27f-6ee3b99efaf6.png">
+
