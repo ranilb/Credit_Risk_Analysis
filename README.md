@@ -29,7 +29,7 @@ It can be observed that 53 high risk and 11,675 low risk values are predicted ac
 As the last step, the classification report was obtained and shown below:
 
   <img width="721" alt="naive_classification" src="https://user-images.githubusercontent.com/112113327/213521808-9bde6bb8-d3af-406f-bc47-fd61a9fdddb6.png">
-  
+THe precession is 0.01 and sensitivity is 0.61 for this oversampling technique. The precession and sensitivity values do not provide a justice to make good predictions.
   
 ### SMOTE Oversampling  
 To avoid the inbalance situation in the dataset, next we employ the "SMOTE Oversampling" technique. After oversamling the training data set, both low risk and high risk credit records are equal to 51,352. The code and the results are shown below:
@@ -48,6 +48,8 @@ It can be observed that 53 high risk and 10,916 low risk values are predicted ac
 As the last step, the classification report was obtained and shown below:
 
  <img width="711" alt="SMOKE_classification" src="https://user-images.githubusercontent.com/112113327/213526553-8b2efb28-c391-4eb3-b955-999639bc3175.png">
+THe precession is 0.01 and sensitivity is 0.61 for this oversampling technique. The precession and sensitivity and sensitivity values do not provide a justice to make good predictions.
+
 
 
 ### Cluster Centroid Undersampling
@@ -67,6 +69,7 @@ As the last step, the classification report was obtained and shown below:
 
 <img width="713" alt="Cluster_classification" src="https://user-images.githubusercontent.com/112113327/213531911-2ef65f48-00b9-43cf-b27f-6ee3b99efaf6.png">
 
+THe precession is 0.01 and sensitivity is 0.57 for this oversampling technique. The precession and sensitivity values do not provide a justice to make good predictions.
 
 ### Combination Sampling
 In the three prevous sections, we discussed about both oversampling and under sampling techneques. Now in this section, we are going to combine both techniques and make a new combination to resample the data. Therefore, in this method, number of shigh-risk data rows is 68,458 and the number of low-risk data rows is 62,022 which are not equal. The code is shown below: 
@@ -100,6 +103,7 @@ As the last step, the classification report was obtained and shown below:
 
 <img width="712" alt="brfc_classification" src="https://user-images.githubusercontent.com/112113327/213545527-35dd208c-4590-4f44-b1dd-b74d0d9197a3.png">
 
+THe precession is 0.01 and sensitivity is 0.67 for this oversampling technique. The precession and sensitivity values do not provide a justice to make good predictions.
 
 ### Easy Ensemble AdaBoost Classifie
 In this last section, we use another techneque, called Easy Ensemble AdaBoost Classifie, to check the accuracy of the predictions.  In this method, number of high-risk data is 260 rows compared to 51,352 of low-risk data. There is no special sampling techneque is used here. However, 
