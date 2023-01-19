@@ -85,3 +85,18 @@ It can be observed that 60 high risk and 10,555 low risk values are predicted ac
 As the last step, the classification report was obtained and shown below:
 
 <img width="708" alt="combine_classification" src="https://user-images.githubusercontent.com/112113327/213536964-9353cad8-4827-4f55-a492-70d452393193.png">
+
+### Balanced Random Forest Classifier
+In this section, we use a new techneque, called Balanced Random Forest Classifier, to check the accuracy of the method  In this method, number of high-risk data is 260 rows compared to 51,352 of low-risk data. There is no special sampling techneque is used here. However, the data was trained using the  the "BalancedRandomForestClassifier" model rather than the "logistic model".  The accuracy of this method is 78.78% which implies approximatetly 79 predictions out of 100 is accurate. The result are shown below:
+
+<img width="446" alt="brfc_accuracy" src="https://user-images.githubusercontent.com/112113327/213545463-aa74b50f-6436-4c4a-9b49-5683bdb3e2b3.png">
+
+It can be observed that 58 high risk and 15,558 low risk values are predicted accurately. The table is shown below:
+
+<img width="356" alt="brfc_confusion" src="https://user-images.githubusercontent.com/112113327/213545503-5c7034ce-e2d3-430a-9e48-84c42acd97f3.png">
+
+As the last step, the classification report was obtained and shown below:
+
+
+<img width="712" alt="brfc_classification" src="https://user-images.githubusercontent.com/112113327/213545527-35dd208c-4590-4f44-b1dd-b74d0d9197a3.png">
+
