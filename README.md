@@ -118,3 +118,8 @@ As the last step, the classification report was obtained and shown below:
 
 <img width="716" alt="easy_classification" src="https://user-images.githubusercontent.com/112113327/213549383-fdb7f689-111a-41df-a39e-72fd35b7bfef.png">
 
+
+## Summary
+Three different prediction models were performed on the dataset to determine if a credit risk is high. The Ensemble models brought a lot more improvment specially on the sensitivity of the high risk credits. The data was trained using logistic model with three different sampling technique, however, the accuracy, precession and the sensitivity values are not in a higher level.  Then the "Balanced Random Forest Classifier" model showed some improvements with respect to the accuracy, precession and the sensitivity values, but the "Easy Ensemble AdaBoost Classifier" model outperformed in all aspects.
+
+The accuracy ot the Easy Ensemble AdaBoost Classifier is about 93% which is not perfect, but great among the tested models. Therefore, I would recommend the bank to use this model to predict credit risk, if they can improve the accuracy by resampling the training data using the methods discussed in the previous section.
